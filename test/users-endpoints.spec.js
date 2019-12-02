@@ -172,7 +172,7 @@ describe.only('Users Endpoints', function() {
                     })  
                     .expect(res =>
                         db
-                            .from('blogful_users')    
+                            .from('thingful_users')    
                             .select('*')
                             .where({ id: res.body.id })
                             .first()
